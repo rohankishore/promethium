@@ -1,27 +1,25 @@
-# test_script.py (place this in the promethium_project folder)
+from promethium.balancer import balance_equation
+from promethium.element_handler import ElementFinder
 
-from promethium import element
+# --- Test element finder ---
+element_finder = ElementFinder()
 
-# --- Look up by name ---
-th = element.name("thorium")
+th = element_finder.name("thorium")
 if th:
-    print(f"Found: {th.name}")
-    print(f"Symbol: {th.symbol}")
-    print(f"Atomic Number: {th.atomic_number}")
-    # You can access any column from your CSV as an attribute!
-    # For example, if you have a 'description' column:
-    # print(f"Description: {th.description}")
+    print("--- Element Information ---")
+    for key, value in th.__dict__.items():
+        print(f"{key}: {value}")
     print("-" * 20)
 
-# --- Look up by symbol ---
-au = element.symbol("Au")
-if au:
-    print(f"Found: {au.name}")
-    print(f"Atomic Mass: {au.atomic_mass}")
-    print("-" * 20)
+print(th.atomic_radius)
 
-# --- Look up by atomic number ---
-ten = element.atomic_number(10)
-if ten:
-    print(f"Found: {ten.name}")
-    print(ten)  # Uses the __repr__ method we defined
+
+# --- Test balancer ---
+reactants = ['H2', 'O2']
+products = ['H2O']
+
+balanced_equation = balance_equation(reactants, products)
+
+print("--- Balanced Equation ---")
+print(f"Reactants: {balanced_equation['reactants']}")
+print(f"Products: {balanced_equation['products']}")

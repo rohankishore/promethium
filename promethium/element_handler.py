@@ -45,6 +45,7 @@ class ElementFinder:
             self._df = pd.read_csv(csv_path)
             # Make name lookups case-insensitive by creating a lowercase column
             self._df['name_lower'] = self._df['name'].str.lower()
+            self._df['atomic_number'] = self._df.index + 1
         except FileNotFoundError:
             raise FileNotFoundError(f"Could not find elements.csv at {csv_path}")
 
