@@ -7,7 +7,7 @@
     <a href="#"><img src="https://img.shields.io/pypi/v/promethium?style=for-the-badge&color=blueviolet" alt="PyPI version"></a>
     <a href="#"><img src="https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge" alt="Python version"></a>
     <a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge" alt="License"></a>
-    <a href="#"><img src="https://img.shields.io/github/workflow/status/your-username/promethium/CI?style=for-the-badge" alt="Build Status"></a>
+    <a href="#"><img src="https://img.shields.io/github/workflow/status/rohankishore/promethium/CI?style=for-the-badge" alt="Build Status"></a>
   </p>
 </div>
 
