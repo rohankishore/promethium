@@ -1,40 +1,89 @@
-# Promethium Library Examples
+<div align="center">
+  <h1>Promethium 🧪</h1>
+  <p>
+    <strong>Unleash the elements. A Pythonic interface to a rich, offline database of chemical information.</strong>
+  </p>
+  <p>
+    <a href="#"><img src="https://img.shields.io/pypi/v/promethium?style=for-the-badge&color=blueviolet" alt="PyPI version"></a>
+    <a href="#"><img src="https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge" alt="Python version"></a>
+    <a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge" alt="License"></a>
+    <a href="#"><img src="https://img.shields.io/github/workflow/status/rohankishore/promethium/CI?style=for-the-badge" alt="Build Status"></a>
+  </p>
+</div>
 
-This folder contains examples of how to use the `promethium` library.
+---
 
-## Running the Examples
+**Promethium** is your go-to periodic table and chemistry toolkit in Python. All data is included for **100% offline use**. No internet connection or API keys are required, making it fast, reliable, and perfect for any environment.
 
-To run the examples, make sure you have installed the `promethium` library. You can do this by running the following command in the root of the project:
+## ✨ Features
+
+-   **Offline First**: All data is bundled with the library. No network calls, ever.
+-   **Comprehensive Element Data**: Access dozens of properties for each element, from atomic mass to electronegativity.
+-   **Chemical Equation Balancer**: Programmatically balance complex chemical reactions with a single function call.
+-   **Intuitive API**: A clean, object-oriented interface that's a joy to use.
+-   **Lightweight & Fast**: Built for performance using an efficient data-handling backend.
+
+
+## 🚀 Installation
+
+Install Promethium easily with pip:
 
 ```bash
-pip install -e .
+pip install promethium
 ```
 
-Then, you can run any of the examples using python:
+## 💡 Quick Start
+Getting started with Promethium is incredibly simple.
 
-```bash
-python 01_find_element_by_name.py
-python 02_find_element_by_symbol.py
-python 03_find_element_by_atomic_number.py
-python 04_element_properties.py
-python 05_balance_simple_equation.py
-python 06_balance_complex_equation.py
-python 07_all_element_info.py
+Fetching Element Data
+Look up any element by its name, symbol, or atomic number. The returned object gives you access to all its properties.
+
+```python
+from promethium import element
+
+# Find an element by its name (case-insensitive)
+thorium = element.name("Thorium")
+
+if thorium:
+    print(f"Name: {thorium.name}")
+    print(f"Symbol: {thorium.symbol}")
+    print(f"Atomic Mass: {thorium.atomic_mass}")
+    print(f"Atomic Radius: {thorium.atomic_radius} pm")
+    
+# >>> Name: Thorium
+# >>> Symbol: Th
+# >>> Atomic Mass: 232.0377
+# >>> Atomic Radius: 179 pm
 ```
 
-## Example Output
+### Balancing Chemical Equations
+Provide lists of reactants and products, and let the balancer do the work, returning a dictionary of stoichiometric coefficients.
 
-### 01_find_element_by_name.py
+```python
+from promethium import balance_equation
 
-```
-Name: Gold
-Symbol: Au
-Atomic Number: 79
+# Balance the formation of water
+reactants = ['H2', 'O2']
+products = ['H2O']
+
+balanced = balance_equation(reactants, products)
+
+print(f"Reactants: {balanced['reactants']}")
+print(f"Products: {balanced['products']}")
+
+# >>> Reactants: {'H2': 2, 'O2': 1}
+# >>> Products: {'H2O': 2}
+# This represents the equation: 2H₂ + O₂ ⟶ 2H₂O
 ```
 
-### 05_balance_simple_equation.py
+## 🗺️ Roadmap
+1. [ ] Isotope data integration
+2. [ ] Compound property calculator (molecular weight, etc.)
+3. [ ] Thermodynamic data module
+4. [ ] 2D/3D molecule visualization hooks
 
-```
-Reactants: {'H2': 2, 'O2': 1}
-Products: {'H2O': 2}
-```
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📄 License
+This project is licensed under the MIT License.
