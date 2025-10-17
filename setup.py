@@ -5,9 +5,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='promethium-py',
-    version='0.1.0',
+    version='1.0.0',
     author='Rohan Kishore',
-    author_email='rohan@example.com',
+    author_email='rohankishore746@gmail.com',
     description='A Pythonic interface to a rich, offline database of chemical information.',
     long_description=long_description,
     long_description_content_type='text/markdown',
