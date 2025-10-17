@@ -1,4 +1,4 @@
-from promethium.element_handler import ElementFinder
+from promethium_py.element_handler import ElementFinder
 
 element_finder = ElementFinder()
 

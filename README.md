@@ -6,6 +6,7 @@
     <strong>Unleash the elements. A Pythonic interface to a rich, offline database of chemical information.</strong>
   </p>
   <p>
+    <a href="https://pypi.org/project/promethium-py/"><img src="https://img.shields.io/pypi/v/promethium-py?style=for-the-badge&color=blueviolet" alt="PyPI version"></a>
     <a href="#"><img src="https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge" alt="Python version"></a>
     <a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge" alt="License"></a>
     <a href="#"><img src="https://img.shields.io/github/workflow/status/rohankishore/promethium/CI?style=for-the-badge" alt="Build Status"></a>
@@ -30,7 +31,7 @@
 Install Promethium easily with pip:
 
 ```bash
-pip install promethium
+pip install promethium-py
 ```
 
 ## 💡 Quick Start
@@ -40,7 +41,7 @@ Fetching Element Data
 Look up any element by its name, symbol, or atomic number. The returned object gives you access to all its properties.
 
 ```python
-from promethium import element
+from promethium_py import element
 
 # Find an element by its name (case-insensitive)
 thorium = element.name("Thorium")
@@ -61,7 +62,7 @@ if thorium:
 Provide lists of reactants and products, and let the balancer do the work, returning a dictionary of stoichiometric coefficients.
 
 ```python
-from promethium import balance_equation
+from promethium_py import balance_equation
 
 # Balance the formation of water
 reactants = ['H2', 'O2']
@@ -80,8 +81,8 @@ print(f"Products: {balanced['products']}")
 ### Getting all the Data of an Element
 
 ```python
-from promethium.balancer import balance_equation
-from promethium.element_handler import ElementFinder
+from promethium_py.balancer import balance_equation
+from promethium_py.element_handler import ElementFinder
 
 # --- Test element finder ---
 element_finder = ElementFinder()
@@ -171,7 +172,7 @@ production_concentration: 80.0
 relative_supply_risk: 7.6
 reserve_distribution: 31.0
 political_stability_of_top_producer: 10.8
-political_stability_of_top_reserve_holder: 56.6
+political_stability_ of_top_reserve_holder: 56.6
 top_3_producers: 1) India  2) Brazil  3) Malaysia
 top_3_reserve_holders: 1) USA  2) Australia  3) India
 recycling_rate: nan
