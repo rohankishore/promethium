@@ -3,7 +3,8 @@
 
   <h1>Promethium 🧪</h1>
   <p>
-    <strong>Unleash the elements. A Pythonic interface to a rich, offline database of chemical information.</strong>
+    <strong>Unleash the elements. A Pythonic interface to a rich, offline database of chemical information.</strong> <br>
+    PYPI: https://pypi.org/project/promethium-py/
   </p>
   <p>
     <a href="https://pypi.org/project/promethium-py/"><img src="https://img.shields.io/pypi/v/promethium-py?style=for-the-badge&color=blueviolet" alt="PyPI version"></a>
