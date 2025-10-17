@@ -4,14 +4,13 @@ from promethium.element_handler import ElementFinder
 # --- Test element finder ---
 element_finder = ElementFinder()
 
-th = element_finder.name("thorium")
+th = element_finder.name("francium")
 if th:
     print("--- Element Information ---")
     for key, value in th.__dict__.items():
         print(f"{key}: {value}")
     print("-" * 20)
 
-print(th.atomic_radius)
 
 
 # --- Test balancer ---
