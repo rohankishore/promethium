@@ -18,9 +18,9 @@ setup(
     },
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
+    license='MIT',
     python_requires='>=3.8',
     install_requires=[
         'pandas',
