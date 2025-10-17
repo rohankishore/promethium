@@ -20,6 +20,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
+    
     license='MIT',
     python_requires='>=3.8',
     install_requires=[
