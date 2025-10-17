@@ -1,1 +1,2 @@
-chempy
+pandas
+numpy

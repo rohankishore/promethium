@@ -1,3 +1,4 @@
+README.md
 setup.py
 promethium/__init__.py
 promethium/balancer.py
@@ -7,3 +8,16 @@ promethium.egg-info/SOURCES.txt
 promethium.egg-info/dependency_links.txt
 promethium.egg-info/requires.txt
 promethium.egg-info/top_level.txt
+promethium/data/alembic_version.csv
+promethium/data/elements.csv
+promethium/data/groups.csv
+promethium/data/ionicradii.csv
+promethium/data/ionizationenergies.csv
+promethium/data/isotopedecaymodes.csv
+promethium/data/isotopes.csv
+promethium/data/oxidationstates.csv
+promethium/data/phasetransitions.csv
+promethium/data/propertymetadata.csv
+promethium/data/scattering_factors.csv
+promethium/data/screeningconstants.csv
+promethium/data/series.csv
