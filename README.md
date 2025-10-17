@@ -76,6 +76,113 @@ print(f"Products: {balanced['products']}")
 # This represents the equation: 2H₂ + O₂ ⟶ 2H₂O
 ```
 
+### Getting all the Data of an Element
+
+```python
+from promethium.balancer import balance_equation
+from promethium.element_handler import ElementFinder
+
+# --- Test element finder ---
+element_finder = ElementFinder()
+
+th = element_finder.name("thorium")
+if th:
+    print("--- Element Information ---")
+    for key, value in th.__dict__.items():
+        print(f"{key}: {value}")
+    print("-" * 20)
+
+
+
+"""
+atomic_radius: 180.0
+block: f
+density: 11.7
+description: Grey radioactive metallic element. Belongs to actinoids. Found in monazite sand in Brazil, India and the US. Thorium-232 has a half-life of 1.39x10^10 years. Can be used as a nuclear fuel for breeder reactors. Thorium-232 captures slow Neutrons and breeds uranium-233. Discovered by Jons J. Berzelius in 1829.
+dipole_polarizability: 217.0
+electron_affinity: nan
+electronic_configuration: [Rn] 6d2 7s2
+evaporation_heat: 513.7
+fusion_heat: 16.11
+group_id: nan
+lattice_constant: 5.08
+lattice_structure: FCC
+name: Thorium
+period: 7
+series_id: 10
+specific_heat_capacity: 0.118
+symbol: Th
+thermal_conductivity: nan
+vdw_radius: 245.0
+covalent_radius_cordero: 206.0
+covalent_radius_pyykko: 175
+en_pauling: 1.3
+en_allen: nan
+jmol_color: #00baff
+cpk_color: #ff1493
+proton_affinity: nan
+gas_basicity: nan
+heat_of_formation: 602.0
+c6: nan
+covalent_radius_bragg: nan
+vdw_radius_bondi: nan
+vdw_radius_truhlar: nan
+vdw_radius_rt: nan
+vdw_radius_batsanov: 240.0
+vdw_radius_dreiding: nan
+vdw_radius_uff: 339.6
+vdw_radius_mm3: 274.0
+abundance_crust: 9.6
+abundance_sea: 1e-06
+molcas_gv_color: #00baff
+en_ghosh: 0.10277
+vdw_radius_alvarez: 293.0
+c6_gb: nan
+atomic_weight: 232.0377
+atomic_weight_uncertainty: 0.0004
+is_monoisotopic: nan
+is_radioactive: 1
+cas: 7440-29-1
+atomic_radius_rahm: 288.0
+geochemical_class: rare earth & related
+goldschmidt_class: litophile
+metallic_radius: nan
+metallic_radius_c12: nan
+covalent_radius_pyykko_double: 143.0
+covalent_radius_pyykko_triple: 136.0
+discoverers: Jöns Berzelius
+discovery_year: 1828.0
+discovery_location: Sweden
+name_origin: Named for Thor, Norse god of thunder.
+sources: Found in various minerals like monazite and thorite.
+uses: Used in making strong alloys. Also in ultraviolet photoelectric cells. It is a common ingredient in high-quality lenses. Bombarded with neutrons make uranium-233, a nuclear fuel.
+mendeleev_number: 16
+dipole_polarizability_unc: 54.0
+pettifor_number: 47.0
+glawe_number: 34.0
+molar_heat_capacity: 27.32
+en_miedema: 3.3
+miedema_molar_volume: 19.8
+miedema_electron_density: 2.1
+en_gunnarsson_lundqvist: nan
+en_robles_bartolotti: nan
+production_concentration: 80.0
+relative_supply_risk: 7.6
+reserve_distribution: 31.0
+political_stability_of_top_producer: 10.8
+political_stability_of_top_reserve_holder: 56.6
+top_3_producers: 1) India  2) Brazil  3) Malaysia
+top_3_reserve_holders: 1) USA  2) Australia  3) India
+recycling_rate: nan
+substitutability: High
+price_per_kg: 287.0
+en_mullay: nan
+name_lower: thorium
+atomic_number: 90
+
+"""
+```
+
 ## 🗺️ Roadmap
 1. [ ] Isotope data integration
 2. [ ] Compound property calculator (molecular weight, etc.)
