@@ -1,10 +1,11 @@
 <div align="center">
+  <img width="1763" height="550" alt="Group 2" src="https://github.com/user-attachments/assets/2ec6bc58-490a-46de-b61a-c0751a5fbb4e" />
+
   <h1>Promethium 🧪</h1>
   <p>
     <strong>Unleash the elements. A Pythonic interface to a rich, offline database of chemical information.</strong>
   </p>
   <p>
-    <a href="#"><img src="https://img.shields.io/pypi/v/promethium?style=for-the-badge&color=blueviolet" alt="PyPI version"></a>
     <a href="#"><img src="https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge" alt="Python version"></a>
     <a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge" alt="License"></a>
     <a href="#"><img src="https://img.shields.io/github/workflow/status/rohankishore/promethium/CI?style=for-the-badge" alt="Build Status"></a>
